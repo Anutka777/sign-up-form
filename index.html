@@ -6,85 +6,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sign-up page project example using css framework">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Sign-up Form</title>
 </head>
 <body>
-  <section class="columns">
-    <div class="column is-4 image">
+  <div class="columns">
+    <div class="column is-4 img-area p-0 has-text-centered">
       <div class="logo">
-        <img src="assets/odin-lined.png">
-        <h1 class="title">Odin</h1>
+        <figure class="image">
+          <img src="assets/odin-lined.png">
+        </figure>
+        <h1 class="title is-uppercase">Odin</h1>
       </div>
-      <a href="https://www.freepik.com/free-vector/cute-donkey-sitting-waving-hand-cartoon-vector-illustration_31415861.htm#query=happy%20animals&position=17&from_view=search&track=sph">Image by braves</a> on Freepik
+      <div class="credits has-text-light">
+        <a class="has-text-light" href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+          Halie West
+        </a>
+         on 
+        <a class="has-text-light" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+          Unsplash
+        </a>
+      </div>
     </div>
-    <div class="column">
-      <section class="section">
-        <p>
+    <main class="column has-background-light p-0">
+      <section class="section mt-6">
+        <p class="has-text-weight-bold">
           This is not a real online service! You know you need something like this
          in your life to help you realize you deepest dreams.
         </p>
-        <p>
-          Sign up <i>now</i> to get started.
+        <p class="has-text-weight-bold">
+          Sign up <i class="is-italic">now</i> to get started.
         </p>
-        <p>
-          You <i>know</i> you want to.
+        <p class=" pt-6 has-text-weight-bold">
+          You <i class="is-italic">know</i> you want to.
         </p>
       </section>
-      <section class="section">
-        <p>
+      <section class="form section has-background-white">
+        <p class="has-text-weight-bold">
           Lets do this!
         </p>
-        <div class="columns">
+        <form class="columns">
           <div class="column">
             <div class="field">
-              <label class="label">FIRST NAME</label>
+              <label class="label is-uppercase">First name</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input class="input" type="text" placeholder="e.g. John">
               </div>
             </div>
             <div class="field">
-              <label class="label">EMAIL</label>
+              <label class="label is-uppercase">Email</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input class="input" type="text" placeholder="example@google.com">
               </div>
             </div>
             <div class="field">
-              <label class="label">PASSWORD</label>
+              <label class="label is-uppercase">Password</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input class="input" type="text" placeholder="8 characters minimum">
               </div>
             </div>
           </div>
           <div class="column">
             <div class="field">
-              <label class="label">LAST NAME</label>
+              <label class="label is-uppercase">Last name</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input class="input" type="text" placeholder="e.g. Doe">
               </div>
             </div>
             <div class="field">
-              <label class="label">PHONE NUMBER</label>
+              <label class="label is-uppercase">Phone number</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input class="input" type="text" placeholder="e.g. 89003336699">
               </div>
             </div>
             <div class="field">
-              <label class="label">CONFIRM PASSWORD</label>
+              <label class="label is-uppercase">Confirm password</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input class="input" type="text" placeholder="8 characters minimum">
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </section>
       <section class="section">
-        <button class="button is-primary">Submit</button>
+        <button type="submit" class="button is-primary has-text-weight-bold">Create Account</button>
         <p>
           Already have an acount? <a href="#">Log In</a>
         </p>
       </section>
-    </div>
-  </section>
+    </main>
+  </div>
 </body>
 </html>

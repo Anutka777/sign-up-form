@@ -1,6 +1,48 @@
-.image {
-  background-image: url(assets/6200_b_1_07.jpg);
+@font-face {
+      font-family: 'Norse Bold';
+      src: url("assets/Norse-Bold.otf");
+}
+
+.img-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(assets/img.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.title {
+  font-family: 'Norse Bold';
+  font-size: 5rem;
+  color: white;
+}
+
+.logo img {
+  max-width: 5rem;
+}
+
+.credits a {
+  padding: .3em;
+  text-decoration: underline;
+}
+
+.credits a:hover {
+  color: green;
+  background-color: white;
+}
+
+.form {
+  box-shadow: 1px 5px 5px gray;
+}
+
+label {
+  letter-spacing: .1em;
 }
