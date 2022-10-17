@@ -23,11 +23,11 @@
       </div>
       <div class="credits pt-2 is-size-7 has-text-light">
         Image by 
-        <a class="has-text-light" href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        <a class="mx-1 has-text-light" href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
           Halie West
         </a>
          on 
-        <a class="has-text-light" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        <a class="mx-1 has-text-light" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
           Unsplash
         </a>
       </div>
@@ -49,24 +49,24 @@
         <p class="has-text-weight-bold is-size-5 mb-4">
           Lets do this!
         </p>
-        <form class="columns">
+        <form id="create-account" action="#" class="columns">
           <div class="column">
             <div class="field">
               <label class="label is-uppercase">First name</label>
               <div class="control">
-                <input class="input" type="text" placeholder="e.g. John">
+                <input class="input" type="text" placeholder="e.g. John" minlength="3" required>
               </div>
             </div>
             <div class="field">
               <label class="label is-uppercase">Email</label>
               <div class="control">
-                <input class="input" type="text" placeholder="example@google.com">
+                <input class="input" type="email" placeholder="example@google.com" required>
               </div>
             </div>
             <div class="field">
               <label class="label is-uppercase">Password</label>
               <div class="control">
-                <input class="input" type="text" placeholder="8 characters minimum">
+                <input class="input" type="password" placeholder="8 characters minimum" minlength="8" required>
               </div>
             </div>
           </div>
@@ -74,28 +74,28 @@
             <div class="field">
               <label class="label is-uppercase">Last name</label>
               <div class="control">
-                <input class="input" type="text" placeholder="e.g. Doe">
+                <input class="input" type="text" placeholder="e.g. Doe" minlength="3" required>
               </div>
             </div>
             <div class="field">
               <label class="label is-uppercase">Phone number</label>
               <div class="control">
-                <input class="input" type="text" placeholder="e.g. 89003336699">
+                <input class="input" type="number" placeholder="e.g. 89003336699" minlength="11" maxlength="11" required>
               </div>
             </div>
             <div class="field">
               <label class="label is-uppercase">Confirm password</label>
               <div class="control">
-                <input class="input" type="text" placeholder="8 characters minimum">
+                <input class="input" type="password" placeholder="8 characters minimum" minlength="8" required>
               </div>
             </div>
           </div>
         </form>
       </section>
       <section class="section">
-        <button type="submit" class="button py-5 px-6 has-text-weight-bold ">Create Account</button>
+        <button form="create-account" type="submit" class="button py-5 px-6 has-text-weight-bold ">Create Account</button>
         <p class="pt-5">
-          Already have an acount? <a class="login-link p-1 has-text-weight-bold" href="#">Log In</a>
+          Already have an acount? <a class="login-link mx-1 p-1 has-text-weight-bold" href="#">Log In</a>
         </p>
       </section>
     </main>
