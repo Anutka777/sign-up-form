@@ -3,6 +3,10 @@
       src: url("assets/Norse-Bold.otf");
 }
 
+.columns {
+  min-height: 100vh;
+}
+
 .img-area {
   position: relative;
   background-image: url(assets/img.jpg);
