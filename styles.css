@@ -59,6 +59,12 @@ main.column {
   box-shadow: 1px 5px 5px rgba(0, 0, 0, .1);
 }
 
+@media (min-width: 768px) {
+  .form {
+    max-height: 400px;
+  }
+}
+
 label {
   letter-spacing: .1em;
 }
