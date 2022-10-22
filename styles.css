@@ -69,6 +69,10 @@ label {
   letter-spacing: .1em;
 }
 
+input:not([type="password"]):valid {
+  border-color: #48c78e;
+}
+
 .button {
   background-color: #596D48;
   color: white;

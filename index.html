@@ -93,12 +93,31 @@
         </form>
       </div>
       <div class="section">
-        <button form="create-account" type="submit" class="button py-5 px-6 has-text-weight-bold ">Create Account</button>
+        <button id="submit" form="create-account" type="submit" class="button py-5 px-6 has-text-weight-bold ">Create Account</button>
         <p class="pt-5">
           Already have an acount? <a class="login-link mx-1 p-1 has-text-weight-bold" href="#">Log In</a>
         </p>
       </div>
     </main>
   </div>
+
+  <script>
+    const submitButton = document.getElementById("submit");
+    const passwordField = document.getElementById("user_password");
+    const passwordConfirmation = document.getElementById("user_confirm_password");
+
+    submitButton.addEventListener("click", checkPasswords);
+
+    function checkPasswords() {
+      if (passwordField.value !== passwordConfirmation.value) {
+        passwordField.classList.add("is-danger");
+        passwordConfirmation.classList.add("is-danger");
+        alert("Confirmation password doesn't match. Please try again")
+      } else {
+        passwordField.classList.replace("is-danger", "is-success");
+        passwordConfirmation.classList.replace("is-danger", "is-success");
+      }
+    }
+  </script>
 </body>
 </html>
